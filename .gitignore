@@ -5,3 +5,7 @@ target/
 
 build
 *.class
+.gradle
+*.jar
+*.zip
+*.log
