@@ -34,7 +34,7 @@ import javax.swing.JOptionPane;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class DeleteAll extends FollowAppAction {
+class DeleteAll extends FollowAppAction {
 	public static final String NAME = "deleteAll";
 	private Logger log = Logger.getLogger(DeleteAll.class.getName());
 

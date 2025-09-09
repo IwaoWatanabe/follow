@@ -28,7 +28,7 @@ import java.io.IOException;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Clear extends FollowAppAction {
+class Clear extends FollowAppAction {
 	public static final String NAME = "clear";
 
 	public Clear(FollowApp app) throws IOException {

@@ -16,7 +16,7 @@ import java.io.IOException;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Reset extends FollowAppAction {
+class Reset extends FollowAppAction {
 	public static final String NAME = "reset";
 
 	public Reset(FollowApp app) throws IOException {

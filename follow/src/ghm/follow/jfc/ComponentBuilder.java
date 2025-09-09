@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 
 import javax.swing.JMenuBar;
 
-public class ComponentBuilder {
+class ComponentBuilder {
 	public static Menu fileMenu;
 	public static Menu editMenu;
 	public static Menu toolsMenu;

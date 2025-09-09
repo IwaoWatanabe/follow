@@ -29,7 +29,7 @@ import ghm.follow.jfc.ui.SearchableTextPane;
  * 
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class ClearHighlights extends FollowAppAction {
+class ClearHighlights extends FollowAppAction {
 	public static final String NAME = "clearHighlights";
 
 	public ClearHighlights(FollowApp app) {

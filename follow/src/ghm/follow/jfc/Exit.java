@@ -26,7 +26,7 @@ import java.awt.event.WindowEvent;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Exit extends FollowAppAction {
+class Exit extends FollowAppAction {
 	public static final String NAME = "exit";
 
 	public Exit(FollowApp app) {

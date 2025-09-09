@@ -4,7 +4,7 @@ package ghm.follow.jfc;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 
-public class Find extends FollowAppAction {
+class Find extends FollowAppAction {
 	public static final String NAME = "find";
 
 	private FindDialog dialog;

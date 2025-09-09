@@ -26,7 +26,7 @@ import javax.swing.ImageIcon;
  * 
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class Pause extends FollowAppAction {
+class Pause extends FollowAppAction {
 	public static final String NAME = "pause";
 
 	public Pause(FollowApp app) {

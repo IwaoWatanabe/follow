@@ -31,7 +31,7 @@ import javax.swing.JOptionPane;
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class Open extends FollowAppAction {
+class Open extends FollowAppAction {
 	public static final String NAME = "open";
 
 	private File recentFile;

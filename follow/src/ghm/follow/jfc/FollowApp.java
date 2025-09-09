@@ -273,7 +273,7 @@ public class FollowApp {
 	/**
 	 * Close the current tab
 	 */
-	public void closeFile() {
+	void closeFile() {
 		int tabIndex = tabbedPane.getSelectedIndex();
 		closeFile(tabIndex);
 	}
@@ -281,7 +281,7 @@ public class FollowApp {
 	/**
 	 * Close a specific tab
 	 */
-	public void closeFile(int tabIndex) {
+	void closeFile(int tabIndex) {
 		FileFollowingPane fileFollowingPane = getSelectedFileFollowingPane();
 		if (tabIndex >= 0) {
 			tabbedPane.removeTabAt(tabIndex);
@@ -301,7 +301,7 @@ public class FollowApp {
 	 * @return The value of key in the resource bundle. null if the key is not
 	 *         found.
 	 */
-	public static String getResourceString(String key) {
+	static String getResourceString(String key) {
 		String value = null;
 		try {
 			value = resources.getString(key);
@@ -322,7 +322,7 @@ public class FollowApp {
 	 * @return An image icon based on the URL generated from the value of
 	 *         iconNameKey. null if no URL can be found.
 	 */
-	public static ImageIcon getIcon(Class<?> clazz, String iconNameKey) {
+	static ImageIcon getIcon(Class<?> clazz, String iconNameKey) {
 		String filename = getResourceString(iconNameKey);
 		URL url = clazz.getResource(filename);
 		LOG.finer("Class: " + clazz + ", iconNameKey: " + iconNameKey);
@@ -379,11 +379,11 @@ public class FollowApp {
 		frame.setSize(attributes.getWidth(), attributes.getHeight());
 	}
 
-	public void show() {
+	void show() {
 		frame.setVisible(true);
 	}
 
-	public FollowAppAction getAction(String name) {
+	FollowAppAction getAction(String name) {
 		return actions.get(name);
 	}
 
@@ -392,7 +392,7 @@ public class FollowApp {
 	 * 
 	 * @return
 	 */
-	public HashMap<String, FollowAppAction> getActions() {
+	HashMap<String, FollowAppAction> getActions() {
 		return actions;
 	}
 
@@ -404,7 +404,7 @@ public class FollowApp {
 	 * @param action
 	 *            The action to create an association for.
 	 */
-	public void putAction(String name, FollowAppAction action) {
+	void putAction(String name, FollowAppAction action) {
 		if (FollowAppAction.ActionContext.APP == action.getContext()) {
 			action.setEnabled(true);
 		} else {
@@ -413,7 +413,7 @@ public class FollowApp {
 		actions.put(name, action);
 	}
 
-	public void openFile(File file) throws FileNotFoundException {
+	void openFile(File file) throws FileNotFoundException {
 		openFile(file, attributes.autoScroll());
 	}
 
@@ -502,7 +502,7 @@ public class FollowApp {
 	 * @param cursorType
 	 *            may be Cursor.DEFAULT_CURSOR or Cursor.WAIT_CURSOR
 	 */
-	public void setCursor(int cursorType) {
+	void setCursor(int cursorType) {
 		if (cursorType == currentCursor) {
 			return;
 		}
@@ -544,21 +544,21 @@ public class FollowApp {
 		return rightClickListener;
 	}
 
-	public void enableDragAndDrop(Component c) {
+	void enableDragAndDrop(Component c) {
 		// Invoking this constructor automatically sets the component's drop
 		// target
 		new DropTarget(c, new DndFileOpener(this));
 	}
 
-	public void disableDragAndDrop(Component c) {
+	void disableDragAndDrop(Component c) {
 		c.setDropTarget(null);
 	}
 
-	public FileFollowingPane getSelectedFileFollowingPane() {
+	FileFollowingPane getSelectedFileFollowingPane() {
 		return (FileFollowingPane) tabbedPane.getSelectedComponent();
 	}
 
-	public List<FileFollowingPane> getAllFileFollowingPanes() {
+	List<FileFollowingPane> getAllFileFollowingPanes() {
 		int tabCount = tabbedPane.getTabCount();
 		List<FileFollowingPane> allFileFollowingPanes = new ArrayList<FileFollowingPane>();
 		for (int i = 0; i < tabCount; i++) {
@@ -568,35 +568,35 @@ public class FollowApp {
 		return allFileFollowingPanes;
 	}
 
-	public FollowAppAttributes getAttributes() {
+	FollowAppAttributes getAttributes() {
 		return attributes;
 	}
 
-	public Map<File, FileFollowingPane> getFileToFollowingPaneMap() {
+	Map<File, FileFollowingPane> getFileToFollowingPaneMap() {
 		return fileToFollowingPaneMap;
 	}
 
-	public JFrame getFrame() {
+	JFrame getFrame() {
 		return frame;
 	}
 
-	public static FollowApp getInstance() {
+	static FollowApp getInstance() {
 		return instance;
 	}
 
-	public SystemInterface getSystemInterface() {
+	SystemInterface getSystemInterface() {
 		return systemInterface;
 	}
 
-	public void setSystemInterface(SystemInterface systemInterface) {
+	void setSystemInterface(SystemInterface systemInterface) {
 		this.systemInterface = systemInterface;
 	}
 
-	public JTabbedPane getTabbedPane() {
+	JTabbedPane getTabbedPane() {
 		return tabbedPane;
 	}
 
-	public static void centerWindowInScreen(Window window) {
+	static void centerWindowInScreen(Window window) {
 		Dimension screenSize = window.getToolkit().getScreenSize();
 		Dimension windowSize = window.getPreferredSize();
 		window.setLocation(

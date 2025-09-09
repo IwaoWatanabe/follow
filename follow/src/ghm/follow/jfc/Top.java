@@ -29,7 +29,7 @@ import javax.swing.JViewport;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Top extends FollowAppAction {
+class Top extends FollowAppAction {
 	public static final String NAME = "top";
 
 	public Top(FollowApp app) {

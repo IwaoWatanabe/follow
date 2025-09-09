@@ -27,7 +27,7 @@ import javax.swing.JOptionPane;
 /**
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class WhatIsThis extends JButton {
+class WhatIsThis extends JButton {
 
 	public WhatIsThis(final FollowApp app, final String title, final String text) {
 		super(FollowApp.getIcon(WhatIsThis.class, "WhatIsThis.icon"));

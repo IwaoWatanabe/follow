@@ -509,7 +509,7 @@ public class FontSelectionPanel extends JPanel {
 	 * Represents a list of the four font styles: plain, bold, italic, and bold
 	 * italic
 	 */
-	protected static class FontStyleList extends JList {
+	static class FontStyleList extends JList {
 		/**
 		 * Construct a new FontStyleList, using the supplied values for style
 		 * display names
@@ -601,7 +601,7 @@ public class FontSelectionPanel extends JPanel {
 	 * An implementation of {@link javax.swing.ListCellRenderer} which right
 	 * justifies all cells.
 	 */
-	protected static class ListCellRenderer extends DefaultListCellRenderer {
+	static class ListCellRenderer extends DefaultListCellRenderer {
 		public Component getListCellRendererComponent(JList list, Object value,
 				int index, boolean isSelected, boolean cellHasFocus) {
 			JLabel label = (JLabel) super.getListCellRendererComponent(list,
@@ -615,7 +615,7 @@ public class FontSelectionPanel extends JPanel {
 	 * Subclass of {@link java.util.Observable} which allows <tt>public</tt>
 	 * access to the setChanged() method.
 	 */
-	protected static class PublicChangeObservable extends Observable {
+	static class PublicChangeObservable extends Observable {
 		/** @see java.util.Observable#setChanged() */
 		public void setChanged() {
 			super.setChanged();

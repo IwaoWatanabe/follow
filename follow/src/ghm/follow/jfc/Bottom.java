@@ -30,7 +30,7 @@ import javax.swing.JViewport;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Bottom extends FollowAppAction {
+class Bottom extends FollowAppAction {
 	public static final String NAME = "bottom";
 
 	public Bottom(FollowApp app) {

@@ -41,7 +41,7 @@ import java.util.logging.Logger;
 /**
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class FollowAppAttributes {
+class FollowAppAttributes {
 	private static Logger log = Logger.getLogger(FollowAppAttributes.class
 			.getName());
 	EnumeratedProperties properties;

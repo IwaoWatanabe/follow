@@ -11,7 +11,7 @@ import ghm.follow.SystemInterface;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class DefaultSystemInterface implements SystemInterface {
+class DefaultSystemInterface implements SystemInterface {
 	protected FollowApp app;
 
 	public DefaultSystemInterface(FollowApp app) {

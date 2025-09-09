@@ -51,7 +51,7 @@ import javax.swing.KeyStroke;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Configure extends FollowAppAction {
+class Configure extends FollowAppAction {
 	public static final String NAME = "configure";
 
 	public Configure(FollowApp app) {

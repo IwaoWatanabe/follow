@@ -37,10 +37,8 @@ import javax.swing.KeyStroke;
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public abstract class FollowAppAction extends AbstractAction {
-	public enum ActionContext {
-		MULTI_FILE, SINGLE_FILE, APP;
-	}
+abstract class FollowAppAction extends AbstractAction {
+	enum ActionContext { MULTI_FILE, SINGLE_FILE, APP; }
 
 	private static Logger log = Logger.getLogger(FollowAppAction.class
 			.getName());

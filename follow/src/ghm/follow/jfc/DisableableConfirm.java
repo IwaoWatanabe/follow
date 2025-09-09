@@ -35,7 +35,7 @@ import javax.swing.JPanel;
 /**
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class DisableableConfirm extends JDialog {
+class DisableableConfirm extends JDialog {
 
 	public DisableableConfirm(Frame parent, String title, String message,
 			String confirmButtonText, String doNotConfirmButtonText,

@@ -27,7 +27,7 @@ import java.util.logging.Logger;
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  * @author Murali Krishnan
  */
-public class Debug extends FollowAppAction {
+class Debug extends FollowAppAction {
 	public static final String NAME = "debug";
 	private Logger log = Logger.getLogger(Debug.class.getName());
 

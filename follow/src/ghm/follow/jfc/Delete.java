@@ -33,7 +33,7 @@ import javax.swing.JOptionPane;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Delete extends FollowAppAction {
+class Delete extends FollowAppAction {
 	public static final String NAME = "delete";
 	private Logger log = Logger.getLogger(Delete.class.getName());
 

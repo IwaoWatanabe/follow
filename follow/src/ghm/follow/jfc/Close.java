@@ -25,7 +25,7 @@ import java.awt.event.ActionEvent;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Close extends FollowAppAction {
+class Close extends FollowAppAction {
 	public static final String NAME = "close";
 
 	public Close(FollowApp app) {

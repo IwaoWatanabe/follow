@@ -29,7 +29,7 @@ import javax.swing.JMenuItem;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Menu extends JMenu {
+class Menu extends JMenu {
 
 	public Menu(String name, String mnemonic) {
 		super(name);

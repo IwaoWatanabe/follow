@@ -30,7 +30,7 @@ import java.util.List;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class ClearAll extends FollowAppAction {
+class ClearAll extends FollowAppAction {
 	public static final String NAME = "clearAll";
 
 	public ClearAll(FollowApp app) throws IOException {

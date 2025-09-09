@@ -31,7 +31,7 @@ import javax.swing.JToolBar;
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class ToolBar extends JToolBar {
+class ToolBar extends JToolBar {
 	void addFollowAppAction(javax.swing.AbstractAction  a) {
 		this.add(a);
 		JButton toolBarItem = (JButton) this.getComponent(this

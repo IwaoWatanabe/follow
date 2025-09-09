@@ -32,7 +32,7 @@ import javax.swing.JTabbedPane;
  * >4193463</a>. This bug was causing drag-and-drop to behave incorrectly for
  * all but the first tab.
  */
-public class TabbedPane extends JTabbedPane {
+class TabbedPane extends JTabbedPane {
 
 	private FollowAppAttributes attributes = null;
 

@@ -22,7 +22,7 @@ import java.awt.event.ActionEvent;
  * 
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class PreviousTab extends FollowAppAction {
+class PreviousTab extends FollowAppAction {
 	public static final String NAME = "previousTab";
 
 	public PreviousTab(FollowApp app) {

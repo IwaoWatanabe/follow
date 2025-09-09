@@ -21,7 +21,7 @@ import java.awt.image.BufferedImage;
  * Original code from http://stackoverflow.com/questions/60269/how-to-implement-draggable-tab-using-java-swing/60306#60306
  * with minor changes locally to test for tabs outside the bounds.
  */
-public class DraggableTabbedPane extends TabbedPane {
+class DraggableTabbedPane extends TabbedPane {
 	private boolean dragging = false;
 	private Image tabImage = null;
 	private Point currentMouseLocation = null;

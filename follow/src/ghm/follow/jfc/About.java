@@ -26,7 +26,7 @@ import javax.swing.JOptionPane;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class About extends FollowAppAction {
+class About extends FollowAppAction {
 	public static final String NAME = "about";
 
 	public About(FollowApp app) {

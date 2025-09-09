@@ -28,7 +28,7 @@ import java.awt.event.ActionEvent;
  * 
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class ClearAllHighlights extends FollowAppAction {
+class ClearAllHighlights extends FollowAppAction {
 	public static final String NAME = "clearAllHighlights";
 
 	public ClearAllHighlights(FollowApp app) {

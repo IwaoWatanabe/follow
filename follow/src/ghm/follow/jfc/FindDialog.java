@@ -50,7 +50,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public class FindDialog extends JDialog {
+class FindDialog extends JDialog {
 	private JButton findButton;
 	private JButton clearButton;
 	private JButton closeButton;

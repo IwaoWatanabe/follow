@@ -28,7 +28,7 @@ import java.awt.event.ActionEvent;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class Edit extends FollowAppAction {
+class Edit extends FollowAppAction {
 	public static final String NAME = "edit";
 
 	public Edit(FollowApp app) {

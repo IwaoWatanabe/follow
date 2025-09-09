@@ -36,7 +36,7 @@ import java.util.List;
  * 
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  */
-public class DndFileOpener implements DropTargetListener {
+class DndFileOpener implements DropTargetListener {
 
 	public DndFileOpener(FollowApp app) {
 		this.app = app;

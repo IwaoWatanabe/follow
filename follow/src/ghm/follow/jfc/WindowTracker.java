@@ -35,7 +35,7 @@ import javax.swing.JTabbedPane;
  * @author <a href="mailto:greghmerrill@yahoo.com">Greg Merrill</a>
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class WindowTracker extends WindowAdapter {
+class WindowTracker extends WindowAdapter {
 	private final Logger log = Logger.getLogger(WindowTracker.class.getName());
 	protected FollowApp app;
 

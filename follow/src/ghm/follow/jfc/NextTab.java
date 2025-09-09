@@ -22,7 +22,7 @@ import java.awt.event.ActionEvent;
  * 
  * @author <a href="mailto:carl.hall@gmail.com">Carl Hall</a>
  */
-public class NextTab extends FollowAppAction {
+class NextTab extends FollowAppAction {
 	public static final String NAME = "nextTab";
 
 	public NextTab(FollowApp app) {
