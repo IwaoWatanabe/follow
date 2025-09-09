@@ -114,11 +114,11 @@ into "lib"
 
 project(':follow') {
 description 'Log file follower like "tail -f" but with better features like "less +F" '
-version = '1.7.6'
+version = '1.8.0'
 sourceCompatibility = '1.6'
 apply plugin: 'application'
 // apply plugin: 'com.github.johnrengelman.shadow'
-mainClassName = 'ghm.follow.FollowApp'
+mainClassName = 'ghm.follow.jfc.FollowApp'
 jar {
   manifest {
       attributes 'Main-Class': mainClassName
