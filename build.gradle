@@ -1,6 +1,17 @@
-plugins {
-  id 'com.github.johnrengelman.shadow' version '4.0.4'
+
+buildscript {
+repositories {
+  mavenLocal()
+  maven {
+    url 'https://pkgs.dev.azure.com/iwaowatanabe/kt-learning/_packaging/OldVM/maven/v1'
+    // see: https://dev.azure.com/iwaowatanabe/kt-learning/_artifacts/feed/OldVM
+  }
+  mavenCentral()
 }
+dependencies {
+  classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
+}}
+
 
 def sourceEncoding = 'utf-8'
 def documentEncoding = 'utf-8'
@@ -75,6 +86,7 @@ javadoc {
   options.encoding = sourceEncoding
   if (env.DEBUG != null) options.memberLevel = JavadocMemberLevel.PACKAGE
   options.addStringOption('Xdoclint:none', '-quiet')
+    if (env.JDK6_HOME != null) executable = file("${env.JDK6_HOME}/bin/javadoc.exe")
   doLast {
     println "INFO: open ${project.docsDir}/javadoc/index.html"
   }
@@ -99,25 +111,10 @@ from configurations.compile
 into "lib" 
 }}
 
-subprojects {
-  // sourceCompatibility = 1.6
-
-task hotDeploy {
-  dependsOn "ear"
-  doFirst {
-    println "from :build/libs/${project.ear.archiveName} To: ${env.DEPLOY_PATH}"
-  }
-  doLast {
-    copy {
-      from "build/libs/${project.ear.archiveName}"
-      into "${env.DEPLOY_PATH}"
-    }
-  }
-}}
 
 project(':follow') {
 description 'Log file follower like "tail -f" but with better features like "less +F" '
-version = '1.7.6-SNAPSHOT'
+version = '1.7.6'
 sourceCompatibility = '1.6'
 apply plugin: 'application'
 // apply plugin: 'com.github.johnrengelman.shadow'
