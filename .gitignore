@@ -9,3 +9,4 @@ build
 *.jar
 *.zip
 *.log
+bin/
