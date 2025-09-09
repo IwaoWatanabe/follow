@@ -1,4 +1,4 @@
-package ghm.follow.test;
+package ghm.follow;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

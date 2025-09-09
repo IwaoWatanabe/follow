@@ -1,9 +1,6 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
-import ghm.follow.FollowApp;
-import ghm.follow.config.FollowAppAttributes;
-import ghm.follow.gui.Exit;
-import ghm.follow.test.BaseTestCase;
+import ghm.follow.BaseTestCase;
 
 import java.io.File;
 import java.security.Permission;

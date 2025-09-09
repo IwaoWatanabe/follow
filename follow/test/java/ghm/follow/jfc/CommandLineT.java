@@ -1,4 +1,4 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

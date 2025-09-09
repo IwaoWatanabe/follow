@@ -1,8 +1,8 @@
-package ghm.follow.test;
+package ghm.follow;
 
 import static org.junit.Assert.assertEquals;
-import ghm.follow.io.JTextComponentDestination;
-import ghm.follow.io.OutputDestination;
+import ghm.follow.jfc.ui.JTextComponentDestination;
+import ghm.follow.OutputDestination;
 
 import java.util.Date;
 import java.util.Random;

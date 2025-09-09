@@ -1,10 +1,7 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import ghm.follow.gui.Close;
-import ghm.follow.gui.Open;
-import ghm.follow.nav.Bottom;
 
 import java.io.File;
 

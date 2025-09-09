@@ -1,9 +1,9 @@
-package ghm.follow.test;
+package ghm.follow;
 
 import static org.junit.Assert.assertEquals;
 import ghm.follow.FileFollower;
-import ghm.follow.io.JTextComponentDestination;
-import ghm.follow.io.OutputDestination;
+import ghm.follow.jfc.ui.JTextComponentDestination;
+import ghm.follow.OutputDestination;
 
 import javax.swing.JTextArea;
 

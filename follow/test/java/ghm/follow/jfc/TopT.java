@@ -1,7 +1,6 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
 import static org.junit.Assert.assertFalse;
-import ghm.follow.nav.Top;
 
 import org.junit.After;
 import org.junit.AfterClass;

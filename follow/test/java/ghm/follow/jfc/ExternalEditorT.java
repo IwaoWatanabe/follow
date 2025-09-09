@@ -17,10 +17,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
 import static org.junit.Assert.assertEquals;
-import ghm.follow.gui.ExternalEditor;
+import ghm.follow.jfc.ui.ExternalEditor;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.Test;

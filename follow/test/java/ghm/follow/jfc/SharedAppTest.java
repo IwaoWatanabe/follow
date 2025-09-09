@@ -1,4 +1,4 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

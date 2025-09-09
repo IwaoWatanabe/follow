@@ -1,6 +1,6 @@
-package ghm.follow.test.gui;
+package ghm.follow.jfc;
 
-import ghm.follow.systemInterface.SystemInterface;
+import ghm.follow.SystemInterface;
 
 import java.io.File;
 
